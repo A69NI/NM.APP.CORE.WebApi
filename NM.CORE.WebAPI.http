@@ -1,0 +1,6 @@
+@NM.CORE.WebAPI_HostAddress = http://localhost:5253
+
+GET {{NM.CORE.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
