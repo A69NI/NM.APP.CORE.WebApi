@@ -1,4 +1,4 @@
-namespace NM.CORE.WebAPI
+namespace NM.APP.CORE.WebAPI
 {
     public class WeatherForecast
     {

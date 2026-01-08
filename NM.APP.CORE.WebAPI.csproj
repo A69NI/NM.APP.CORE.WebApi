@@ -14,8 +14,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NM.APP.Main\NM.CORE.Infrastructore\NM.CORE.Infrastructore.csproj" />
-    <ProjectReference Include="..\NM.CORE.Application\NM.CORE.Application.csproj" />
+    <Reference Include="NM.APP.CORE.Application">
+      <HintPath>..\NM.APP.CORE.Application\bin\Debug\net9.0\NM.APP.CORE.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="NM.APP.CORE.Domain">
+      <HintPath>..\NM.APP.CORE.Domain\bin\Debug\net9.0\NM.APP.CORE.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="NM.APP.CORE.Infrastructore">
+      <HintPath>..\NM.APP.CORE.Infrastructure\bin\Debug\net9.0\NM.APP.CORE.Infrastructore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

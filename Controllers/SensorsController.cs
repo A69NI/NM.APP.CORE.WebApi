@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NM.CORE.Application.Services;
-using NM.CORE.Domain.Entities;
+using NM.APP.CORE.Application.Services;
+using NM.APP.CORE.Domain.Entities;
 
-namespace NM.CORE.WebAPI.Controllers
+namespace NM.APP.CORE.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -1,12 +1,15 @@
 
 using Microsoft.EntityFrameworkCore;
-using NM.CORE.Application.Services;
-using NM.CORE.Domain.Entities;
-using NM.CORE.Domain.Repositories;
-using NM.CORE.Infrastructore.Data;
-using NM.CORE.Infrastructore.Repository;
+using NM.APP.CORE.Application.Services;
+using NM.APP.CORE.Domain.Entities;
+using NM.APP.CORE.Domain.Repositories;
+using NM.APP.CORE.Infrastructore.Data;
+using NM.APP.CORE.Infrastructore.Repository;
+{
+    
+}
 
-namespace NM.CORE.WebAPI
+namespace NM.APP.CORE.WebAPI
 {
     public class Program
     {
