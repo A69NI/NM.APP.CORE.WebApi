@@ -15,7 +15,7 @@ namespace NM.APP.CORE.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Retrieves all main process records.
+        /// Liefert alle Einträge aus der Protokoll Tabelle zurück. Retrieves all main process records.
         /// </summary>
         /// <returns>A task that represents the asynchronous operation. The task result contains a collection of all main tree
         /// process entities.</returns>
@@ -27,7 +27,7 @@ namespace NM.APP.CORE.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Retrieves the main entity with the specified identifier.
+        ///  Liefert einen Eintrag anhand der Key ID inkl. Beziehung zurück. Retrieves the main entity with the specified identifier.
         /// </summary>
         /// <param name="id">The unique identifier of the sensor to retrieve.</param>
         /// <returns>An <see cref="IActionResult"/> containing the sensor entity if found; otherwise, a NotFound result.</returns>
@@ -43,7 +43,7 @@ namespace NM.APP.CORE.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Creates a new main entity and adds it to the data store.
+        /// Erstellt einen neuen Eintrag in der Protokoll Tabelle. Creates a new main entity and adds it to the data store.
         /// </summary>
         /// <param name="tBL_AN_CollectionProtokoll">The sensor entity to create. Must not be null.</param>
         /// <returns>A response with status code 201 (Created) containing the created sensor entity and a location header with a
@@ -58,7 +58,7 @@ namespace NM.APP.CORE.WebAPI.Controllers
 
 
         /// <summary>
-        /// Updates the details of an existing main with the specified identifier.
+        /// Aktualisiert einen bestehenden Eintrag in der Protokoll Tabelle. Updates the details of an existing main with the specified identifier.
         /// </summary>
         /// <remarks>This method returns a 201 Created response with the updated sensor data if the update
         /// is successful. If the id does not match the MainTree_ID of the provided object, a 400 Bad Request response
@@ -86,7 +86,7 @@ namespace NM.APP.CORE.WebAPI.Controllers
         }
 
         /// <summary>
-        /// Deletes the main with the specified identifier.
+        /// Löscht einen vorhandenen Eintrag anhand der Key ID. Deletes the main with the specified identifier.
         /// </summary>
         /// <param name="id">The unique identifier of the sensor to delete.</param>
         /// <returns>An <see cref="OkObjectResult"/> containing the deleted sensor if the operation is successful; otherwise, a
