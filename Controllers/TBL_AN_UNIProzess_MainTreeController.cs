@@ -17,6 +17,9 @@ namespace NM.APP.CORE.WebAPI.Controllers
         /// <summary>
         /// Retrieves all main process records.
         /// </summary>
+        /// <remarks>This method returns a 201 Created response with the updated sensor data if the update
+        /// is successful. If the id does not match the MainTree_ID of the provided object, a 400 Bad Request response
+        /// is returned. The sensor must already exist; otherwise, the update may not be applied.</remarks>
         /// <returns>A task that represents the asynchronous operation. The task result contains a collection of all main tree
         /// process entities.</returns>
         [HttpGet]
@@ -29,6 +32,9 @@ namespace NM.APP.CORE.WebAPI.Controllers
         /// <summary>
         /// Retrieves the main entity with the specified identifier.
         /// </summary>
+        /// <remarks>This method returns a 201 Created response with the updated sensor data if the update
+        /// is successful. If the id does not match the MainTree_ID of the provided object, a 400 Bad Request response
+        /// is returned. The sensor must already exist; otherwise, the update may not be applied.</remarks>
         /// <param name="id">The unique identifier of the sensor to retrieve.</param>
         /// <returns>An <see cref="IActionResult"/> containing the sensor entity if found; otherwise, a NotFound result.</returns>
         [HttpGet("{id}")]

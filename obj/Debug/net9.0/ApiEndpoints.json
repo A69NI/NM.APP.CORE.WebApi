@@ -283,6 +283,95 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzesse_MainTree_TypController",
+    "Method": "Get",
+    "RelativePath": "api/TBL_AN_UNIProzesse_MainTree_Typ",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.APP.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree_Typ, NM.APP.CORE.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzesse_MainTree_TypController",
+    "Method": "CreateSensor",
+    "RelativePath": "api/TBL_AN_UNIProzesse_MainTree_Typ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tBL_AN_UNIProzesse_MainTree_Typ",
+        "Type": "NM.APP.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree_Typ",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzesse_MainTree_TypController",
+    "Method": "GetById",
+    "RelativePath": "api/TBL_AN_UNIProzesse_MainTree_Typ/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzesse_MainTree_TypController",
+    "Method": "UpdateSensor",
+    "RelativePath": "api/TBL_AN_UNIProzesse_MainTree_Typ/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tBL_AN_UNIProzesse_MainTree_Typ",
+        "Type": "NM.APP.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree_Typ",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzesse_MainTree_TypController",
+    "Method": "DeleteSensor",
+    "RelativePath": "api/TBL_AN_UNIProzesse_MainTree_Typ/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NM.APP.CORE.WebAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
