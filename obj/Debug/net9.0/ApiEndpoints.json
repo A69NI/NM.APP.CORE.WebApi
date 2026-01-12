@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.SensorsController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.SensorsController",
     "Method": "Get",
     "RelativePath": "api/Sensors",
     "HttpMethod": "GET",
@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.CORE.Domain.Entities.Sensor, NM.CORE.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.APP.CORE.Domain.Entities.Sensor, NM.APP.CORE.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.SensorsController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.SensorsController",
     "Method": "CreateSensor",
     "RelativePath": "api/Sensors",
     "HttpMethod": "POST",
@@ -29,14 +29,14 @@
     "Parameters": [
       {
         "Name": "sensor",
-        "Type": "NM.CORE.Domain.Entities.Sensor",
+        "Type": "NM.APP.CORE.Domain.Entities.Sensor",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.SensorsController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.SensorsController",
     "Method": "GetSensorById",
     "RelativePath": "api/Sensors/{id}",
     "HttpMethod": "GET",
@@ -52,7 +52,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.SensorsController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.SensorsController",
     "Method": "UpdateSensor",
     "RelativePath": "api/Sensors/{id}",
     "HttpMethod": "PUT",
@@ -66,14 +66,14 @@
       },
       {
         "Name": "sensor",
-        "Type": "NM.CORE.Domain.Entities.Sensor",
+        "Type": "NM.APP.CORE.Domain.Entities.Sensor",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.SensorsController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.SensorsController",
     "Method": "DeleteSensor",
     "RelativePath": "api/Sensors/{id}",
     "HttpMethod": "DELETE",
@@ -89,16 +89,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_CollectionProtokollController",
     "Method": "Get",
-    "RelativePath": "api/TBL_AN_UNIProzess_MainTree",
+    "RelativePath": "api/TBL_AN_CollectionProtokoll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree, NM.CORE.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.APP.CORE.Domain.Entities.TBL_AN_CollectionProtokoll, NM.APP.CORE.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -109,7 +109,96 @@
     ]
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_CollectionProtokollController",
+    "Method": "CreateSensor",
+    "RelativePath": "api/TBL_AN_CollectionProtokoll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tBL_AN_CollectionProtokoll",
+        "Type": "NM.APP.CORE.Domain.Entities.TBL_AN_CollectionProtokoll",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_CollectionProtokollController",
+    "Method": "GetById",
+    "RelativePath": "api/TBL_AN_CollectionProtokoll/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_CollectionProtokollController",
+    "Method": "UpdateSensor",
+    "RelativePath": "api/TBL_AN_CollectionProtokoll/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tBL_AN_CollectionProtokoll",
+        "Type": "NM.APP.CORE.Domain.Entities.TBL_AN_CollectionProtokoll",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_CollectionProtokollController",
+    "Method": "DeleteSensor",
+    "RelativePath": "api/TBL_AN_CollectionProtokoll/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "Method": "Get",
+    "RelativePath": "api/TBL_AN_UNIProzess_MainTree",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.APP.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree, NM.APP.CORE.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
     "Method": "CreateSensor",
     "RelativePath": "api/TBL_AN_UNIProzess_MainTree",
     "HttpMethod": "POST",
@@ -118,14 +207,14 @@
     "Parameters": [
       {
         "Name": "tBL_AN_UNIProzesse_MainTree",
-        "Type": "NM.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree",
+        "Type": "NM.APP.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
     "Method": "GetById",
     "RelativePath": "api/TBL_AN_UNIProzess_MainTree/{id}",
     "HttpMethod": "GET",
@@ -141,7 +230,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
     "Method": "UpdateSensor",
     "RelativePath": "api/TBL_AN_UNIProzess_MainTree/{id}",
     "HttpMethod": "PUT",
@@ -155,14 +244,14 @@
       },
       {
         "Name": "tBL_AN_UNIProzesse_MainTree",
-        "Type": "NM.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree",
+        "Type": "NM.APP.CORE.Domain.Entities.TBL_AN_UNIProzesse_MainTree",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
     "Method": "DeleteSensor",
     "RelativePath": "api/TBL_AN_UNIProzess_MainTree/{id}",
     "HttpMethod": "DELETE",
@@ -178,7 +267,23 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NM.CORE.WebAPI.Controllers.WeatherForecastController",
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.TBL_AN_UNIProzess_MainTreeController",
+    "Method": "GetByTypId",
+    "RelativePath": "api/TBL_AN_UNIProzess_MainTree/by-typ/{typ_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "typ_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NM.APP.CORE.WebAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
     "HttpMethod": "GET",
@@ -187,7 +292,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.CORE.WebAPI.WeatherForecast, NM.CORE.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NM.APP.CORE.WebAPI.WeatherForecast, NM.APP.CORE.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
