@@ -54,6 +54,12 @@ namespace NM.APP.CORE.WebAPI
             builder.Services.AddScoped<ITBL_AN_UNIProzesse_MainTree_TypRepository, TBL_AN_UNIProzesse_MainTree_TypRepository>();
             builder.Services.AddScoped<TBL_AN_UNIProzesse_MainTree_TypService>();
 
+            builder.Services.AddScoped<ITBL_AN_SolutionRepository, TBL_AN_SolutionRepository>();
+            builder.Services.AddScoped<TBL_AN_SolutionService>();
+
+            builder.Services.AddScoped<ITBL_AN_SolutionThemeRepository, TBL_AN_SolutionThemeRepository>();
+            builder.Services.AddScoped<TBL_AN_SolutionThemeService>();
+
             //Json
             builder.Services.AddControllers()
                 .AddJsonOptions(options => {
