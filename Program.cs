@@ -60,6 +60,12 @@ namespace NM.APP.CORE.WebAPI
             builder.Services.AddScoped<ITBL_AN_SolutionThemeRepository, TBL_AN_SolutionThemeRepository>();
             builder.Services.AddScoped<TBL_AN_SolutionThemeService>();
 
+            builder.Services.AddScoped<ITBL_AN_ITProjekt_MainTreeRepository, TBL_AN_ITProjekt_MainTreeRepository>();
+            builder.Services.AddScoped<TBL_AN_ITProjekt_MainTreeService>();
+
+            builder.Services.AddScoped<ITBL_AN_ITProjekt_MainTree_TypRepository, TBL_AN_ITProjekt_MainTree_TypRepository>();
+            builder.Services.AddScoped<TBL_AN_ITProjekt_MainTree_TypService>();
+
             //Json
             builder.Services.AddControllers()
                 .AddJsonOptions(options => {
